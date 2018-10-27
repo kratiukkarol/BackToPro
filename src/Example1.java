@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Methods {
+public class Example1 {
 
     public static void main(String[] args){
         System.out.println("Type a number");
