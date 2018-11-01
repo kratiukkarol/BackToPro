@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -6,15 +7,20 @@ import static org.junit.Assert.fail;
 
 public class Example6Test {
 
+    private Example6 range;
+
+    @Before
+    public void setUp(){
+        range = new Example6(10,20);
+    }
+
     @Test
     public void shouldSayThatNumberIsInRange(){
-        Example6 range = new Example6(10,20);
         Assert.assertTrue(range.isInRange(15));
     }
 
     @Test
     public void shouldSayThatNumberIsNotInRange(){
-        Example6 range = new Example6(10,20);
         Assert.assertFalse(range.isInRange(22));
     }
 
