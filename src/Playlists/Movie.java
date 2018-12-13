@@ -1,3 +1,4 @@
+package Playlists;
 public class Movie extends Playable{
 
 	public Movie(String title) {
